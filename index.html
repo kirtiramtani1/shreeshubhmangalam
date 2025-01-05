@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Manglam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8e1;
+            color: #4e342e;
+        }
+        .header {
+            background: linear-gradient(90deg, #ffcc80, #ffe0b2);
+            color: #4e342e;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo img {
+            max-height: 100px;
+        }
+        .header .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .header .nav ul li {
+            margin: 0 15px;
+        }
+        .header .nav ul li a {
+            color: #4e342e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('bgimage1.avif') no-repeat center center/cover;
+            color: #4e342e;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about, .amenities, .projects, .gallery, .location, .contact {
+            padding: 50px 0;
+        }
+        h2 {
+            text-align: center;
+            color: #4e342e;
+            margin-bottom: 20px;
+        }
+        .amenities {
+            background-color: #fff3e0;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .amenities h3 {
+            margin-bottom: 15px;
+            color: #4e342e;
+        }
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .amenities-item {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .amenities-item i {
+            font-size: 2rem;
+            color: #ff7043;
+            margin-bottom: 10px;
+        }
+        .amenities-item p {
+            margin: 0;
+            font-weight: bold;
+            color: #4e342e;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            background: #ff7043;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact form button:hover {
+            background: #e64a19;
+        }
+        .footer {
+            background: #ffcc80;
+            color: #4e342e;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+           <img src="Logo.png" alt="Shubh Manglam Logo"> 
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Shree Shubh Manglam</h2>
+            <p>Discover Your Dream Home with Us</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Shree Shubh Manglam, a trusted name in the real estate construction industry. With a legacy of excellence and a commitment to quality, we specialize in creating residential and commercial spaces that blend innovative design, robust construction, and exceptional craftsmanship.
+
+           </p>  <p>   At Shree Shubh Manglam, we understand that a home is more than just a structure; 
+            it’s a place where dreams are nurtured, and memories are made. 
+            That’s why every project we undertake is driven by our passion for delivering spaces that offer unparalleled comfort, 
+            modern amenities, and sustainable living solutions.</p>
+            <h2>Why Choose Us</h2>
+            <ul>
+               <li> Expertise and Innovation: With years of experience in construction, 
+                we bring a wealth of knowledge and cutting-edge techniques to every project.</li>
+<li>Customer-Centric Approach: We prioritize customer satisfaction by tailoring our services to meet your unique 
+    needs and aspirations.</li>
+<li>Quality and Integrity: From premium materials to meticulous craftsmanship,
+     we ensure every project reflects the highest standards of excellence.</li>
+<li>Timely Delivery: We understand the importance of deadlines and consistently deliver projects on time, 
+    without compromising on quality.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Building and Flat Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenities-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>24/7 Security</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-swimmer"></i>
+                    <p>Swimming Pool</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <p>Gymnasium</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-building"></i>
+                    <p>Clubhouse</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-tree"></i>
+                    <p>Landscaped Gardens</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-utensils"></i>
+                    <p>Modular Kitchen</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-square"></i>
+                    <p>Premium Flooring</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-columns"></i>
+                    <p>Spacious Balconies</p>
+                </div>
+                <div class="amenities-item">
+                    <i class="fas fa-plug"></i>
+                    <p>Power Backup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+ 
+            <div class="project-list">
+                <div class="project-item">
+                    <h2>SHREE SHUBH MANGALAM </h2>
+                    <H3>Luxurious 2BHK and 3BHK Apartments: Redefining Urban Living in Indore</H3>
+                    <p>Shubh Manglam is a charming blend of Elite Living with the best Contemporary amenities that 
+                        ensures a Warm and Luxurious lifestyle in the finest address . The Unique Combination of Vibrant Surroundings 
+                        , Extremly High-Quality Construction Standards and an experienced approach set apart Shubh Manglam For Delightful Living 
+                    </p><p>Located in a prime area : <B>Patwari Halka No.26 (New 65) , New RTO office Road , Deoguradia , Indore ,MP</B> , this project offers modern amenities and a serene lifestyle. 
+                        With proximity to essential services, it is designed for ultimate comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+    
+            <div>
+                <h2> TYPICAL FLOOR PLAN</h2>
+                <img src="FloorPlan.png" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </div>
+            <div>
+                <h2> 2 BHK & 3 BHK FLOOR PLAN</h2>
+                <img src="2 & 3BHK Floor Plan .png" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </div>
+            <div class="gallery-grid">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+                <img src="Project.png" alt="Project Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h1>Location</h1>
+            <p>Our project is conveniently located with easy access to major landmarks and essential facilities.
+                <ul>
+                    <li><b>ISBT : 600 m</b></li>
+                    <li><b>RTO : 790 m</b></li>
+                    <li><b>BYPASS : 1.95 Km</b></li>
+                    <li><b>TEEN IMLI CHORAHA : 2.25 Km</b></li>
+                    <li><b>D-MART : 2.20 Km</b></li>
+                    <li><b>NAVLAKHA SQUARE : 3.6 Km</b></li>
+                    <li><b>RAILWAY STATION : 7.7 Km</b></li>
+                </ul>
+            </p>
+            
+            <img src="LocationMAP2.png" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            <p><a href="https://maps.app.goo.gl/F7PEhxqg7ZKV6nCN6" target="_blank">View on Google Maps</a></p>
+            
+        </div>
+          
+        
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>Phone: +91 12345 67890</p>
+            <p>Email: contact@shubhmanglam.com</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shubh Manglam. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
